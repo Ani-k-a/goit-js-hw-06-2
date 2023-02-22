@@ -1,0 +1,13 @@
+const textInput = document.querySelector('#validation-input');
+
+textInput.addEventListener('blur', handleInputCounter);
+
+function handleInputCounter () {
+        if (Number(textInput.value.length) === 6) {
+            textInput.classList.add('valid');
+            textInput.classList.remove('invalid');
+           } else
+           textInput.classList.add('invalid');
+           textInput.classList.remove('valid');
+}
+

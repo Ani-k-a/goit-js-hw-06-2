@@ -17,9 +17,9 @@ const gallery = document.querySelector('.gallery');
 
 const cardCreate = ({url, alt}) => {
   const newCard = document.createElement('img');
-  console.dir(newCard);
   newCard.setAttribute('src', url);
   newCard.setAttribute('alt', alt);
+  newCard.setAttribute('class', "img");
   return newCard;
 }
 
