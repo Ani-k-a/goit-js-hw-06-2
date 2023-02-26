@@ -20,8 +20,6 @@ function createBoxes(){
   boxes.append(createBox());
 }
 
-console.dir(input);
-
 input.addEventListener('change', ()=> {
   console.log(input.value)
   createBtn.addEventListener('click', createBoxes);
