@@ -4,7 +4,6 @@ form.addEventListener('submit', handleFormSubmit);
 
 function handleFormSubmit(event){
     event.preventDefault();
-
     const {
         elements: {
             email,
@@ -12,7 +11,8 @@ function handleFormSubmit(event){
         }} = event.currentTarget;
     
     if (email.value !== '' & password.value !== '') {
-        console.log({email, password});
+        console.dir(event.currentTarget);
+        console.log({email : email.value, password : password.value});
         event.currentTarget.reset();
         } else alert(`Please, complete all feelds`);
 

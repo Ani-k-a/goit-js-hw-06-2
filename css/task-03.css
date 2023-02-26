@@ -16,5 +16,7 @@ ul {
     height: 200px;
     background-size: cover;
 
-    
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
 }
